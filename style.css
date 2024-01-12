@@ -83,6 +83,7 @@ main {
 .child-container-left {
     background-color: #e0ca99;
     width: 40%;
+    height: fit-content;
     /* height: 100%; */
     padding-bottom: 9%;
 }
@@ -91,6 +92,9 @@ main {
     display: none;
 }
 
+.bg-of-child-container-right-for-mobile{
+    display: none;
+}
 .profile-pic-box {
     background-color: #f1e4c3;
     width: 45%;
@@ -157,13 +161,19 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 10%;
+    width: 100%;
     background-color: white;
 }
 
-.social-media-links {
+.social-media-links{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+.social-media-link {
+    display: flex;
+    flex-direction: row;
     width: 20px;
     margin: 17px;
 }
@@ -277,6 +287,7 @@ li {
     padding-top: 5%;
 }
 
+
 .box-2-img{
     display: flex;
     flex-direction: row;
@@ -343,7 +354,7 @@ footer {
 }
 
 
-@media only screen and (max-width:786px) {
+@media only screen and (max-width:850px) {
     * {
         margin: 0;
         padding: 0;
@@ -356,19 +367,19 @@ footer {
     }
 
     .header-name {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 15%;
+        display: block;
+        text-align: center;
+        width: 100%;
+        
     }
 
     .name{
-        display: flex;
-        flex-direction: row;
+        display: block;
+        text-align: center;
     }
 
     .role {
-        display: flex;
+        display: block;
         text-align: center;
         align-items: center;
         font-size: small;
@@ -419,10 +430,16 @@ footer {
     }
 
     .child-container-right-for-mobile {
+        margin: 8%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        background-color: #f1e4c3;
+        border-style: solid;
+        border-color: #e0ca99;
     }
 
+    
     .hello-text-mobile {
 
         text-align: center;
@@ -430,6 +447,7 @@ footer {
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
 
     .my-self-mobile {
         text-align: center;
@@ -439,7 +457,22 @@ footer {
         color: gray;
     }
 
+    ul{
+        list-style-type: none;
+        text-decoration: underline;
+    }
+
+    .li{
+        margin: 1%;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
     .skill-list-1 {
+        display: flex;
+        flex-direction: column;
+        
+        vertical-align: middle;
         font-size: large;
         text-align: center;
     }
