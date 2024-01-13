@@ -163,7 +163,7 @@ main {
     justify-content: center;
     margin-top: 10%;
     width: 100%;
-    height: fit-content;
+    height: min-content;
     background-color: white;
 }
 
