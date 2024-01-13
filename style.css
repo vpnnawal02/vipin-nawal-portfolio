@@ -170,6 +170,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 17px;
+    height: 30px;
 }
 .social-media-link {
     display: flex;
