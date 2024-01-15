@@ -163,7 +163,6 @@ main {
     justify-content: center;
     margin-top: 10%;
     width: 100%;
-    height: max-content;
     background-color: white;
 }
 
@@ -171,7 +170,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: fit-content;
 }
 .social-media-link {
     display: flex;
