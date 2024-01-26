@@ -1,43 +1,220 @@
-@import url('https://fonts.cdnfonts.com/css/stylish-calligraphy');
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: #f1e4c3;
+header {
+
+    width: 100%;
+    /* height: %; */
+    background: linear-gradient(to right, white, #f1e4c3)
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.heading{
+nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links-for-mobile {
+    display: none;
+}
+
+.header-name {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    margin-left: 5%;
+}
+
+.header-name:hover {
+    cursor: default;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 80%;
-    font-family:'Courier New', Courier, monospace;
-    background-color: #e0ca99;
-    color: #11009E;
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.nav-links {
+    display: block;
+    text-align: right;
+    width: 100%;
+    /* margin-right: 7%; */
+
+}
+
+.navlink {
+    margin-right: 3%;
+    padding: 2px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navlink:hover {
+    text-decoration: underline;
 }
 
 main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f1e4c3;
-    width: 100%;
-    height: 100vh;
 }
 
 .main-container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:#fff5de;
-    width: 80%;
-    height: 100vh;
+}
+
+.img-1{
+    background-image: url(usedIn/achievements/pyCertificate.png);
+    width:100%;
+}
+.row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    position: relative;
+    
+}
+
+.image-text{
+    position: absolute;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 30%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    cursor: default;
+    z-index: 1;
+    color: black;
+}
+
+
+img{
+    display: flex;
+    flex-direction: row;
+    width: 45vh;
+    justify-content: space-between;
+    z-index: 2;
+
+}
+
+img:hover{
+    filter: blur(4px);
+    cursor: pointer;
+    z-index: 0;
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width:850px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-name {
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .name{
+        display: block;
+        text-align: center;
+    }
+
+    .role {
+        display: block;
+        text-align: center;
+        align-items: center;
+        font-size: small;
+        color: gray;
+    }
+
+    .nav-links {
+        display: none;
+        padding: 1%;
+    }
+
+    .navlink {
+        font-size: small;
+        text-decoration: none;
+    }
+
+    .nav-links-for-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: linear-gradient(to right, #f1e4c3, white);
+    }
+
+    .row-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgs{
+        margin: 0;
+    }
+
+    img{
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
 }

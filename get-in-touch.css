@@ -26,14 +26,6 @@ nav {
     cursor: default;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
 .name {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
@@ -68,6 +60,11 @@ main {
     text-decoration: underline;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
 h1{
     display: flex;
     flex-direction: row;
@@ -79,182 +76,134 @@ h1{
     cursor: default;
 }
 
-main{
+.header-of-contact-form{
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
-    width:100%;
     justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-align: center; 
 }
 
-.social-media-links{
+.main-container{
     display: flex;
     flex-direction: row;
-}
-
-.social-media-link {
-    display: inline-flex;
-    flex-direction: row;
-    width: 30px;
-    margin: 25px;
-}
-
-.main-box{
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    height: 20vh;
-    justify-content: center;
-}
-
-.right-box{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 40vh;
-    justify-content: space-between;
-    background:linear-gradient(to top , white, #f1e4c3);
-    padding: 1%;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-    margin: 3%;
-}
-
-.container-description{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5%;
-}
-
-.contact-form-text{
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-
-}
-
-.contact-form-text-descriprion{
-    display: block;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-
-}
-
-.left-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    
-}
-
-.row-n{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10%;
-
-}
-
-.n{
-    display: flex;
-    flex-direction: row;
-}
-
-img{
-    width: 20px;
+    height:60vh ;
+    margin-top: 2%;
 }
 
 p{
-    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 1%;
+    font-size: large;
+    
 }
 
-.left-box-text{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: gray;
-}
-
-.whatsapp{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: gray;
-    font-size: x-large;
-    text-align: center;
-}
-
-input[type="text"]{
-    width: 80%;
+input[type = text]{
+    width: 100%;
     height: 4vh;
     padding: 1%;
-    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: rgb(216, 216, 216);
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 1%;
+    height: max-content;
+
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding-right: 2%;
+    height:max-content;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+
+}
+
+.Name{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 textarea{
-    width: 80%;
-    height: 8vh;
+    width: 90%;
+    margin: 3%;
+    height: 10vh;
     padding: 1%;
-    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+textarea::placeholder{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .submit-button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 2%;
 }
 
 button{
-    width: 25%;
-    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
+    font-weight: bold;
     color: white;
     background-color: darkblue;
+    border-style: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-size: large;
+    width: 15%;
+    height: 4vh;
 }
 
-
-footer {
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(245, 245, 245);
-    padding: 1%;
-}
-
-.call-and-mail {
-    display: flex;
-    flex-direction: row;
-    margin-right: 5%;
-}
-
-.FC-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 2%;
-    margin-top: 1%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.FC-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 2%;
-    margin-top: 5%;
-    padding: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 @media only screen and (max-width:850px){
     * {
@@ -268,9 +217,7 @@ footer {
         width: 100%;
     }
 
-    main{
-        height: 70vh;
-    }
+    
     .header {
         display: flex;
         flex-direction: column;
@@ -319,18 +266,22 @@ footer {
         font-size: 300%;
     }
 
-    .right-box{
-        width: 70%;
-        border: solid;
-        border-width: 2px;
-        border-color: #f1e4c3; 
+    
+
+    .contact-form{
+        width: 80%;
     }
 
-    .left-box{
-        display: none;
-        flex-direction: column;
+    .header-of-contact-form{
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-top: 50%;
-        
+        width: 100%;
+    }
+
+    button{
+        font-size: small;
+        width: max-content;
+        padding: 1%;
     }
 }
