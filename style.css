@@ -17,6 +17,10 @@ nav {
     justify-content: space-between;
 }
 
+.menu-button {
+    display: none;
+}
+
 .nav-links-for-mobile {
     display: none;
 }
@@ -394,17 +398,27 @@ footer {
         padding: 0;
     }
 
-    .header {
+    /* .header {
         display: flex;
         flex-direction: column;
+        width: 10px;
+    } */
+
+    .menu-icon {
+        display: inline;
         width: 100%;
+    }
+
+    .menu-button {
+        display: flex;
+        width: 35px;
     }
 
     .header-name {
         display: block;
         text-align: center;
         width: 100%;
-
+        margin: 0;
     }
 
     .name {
@@ -426,16 +440,21 @@ footer {
     }
 
     .navlink {
-        font-size: small;
+        font-size: large;
         text-decoration: none;
+        margin: 1%;
     }
 
     .nav-links-for-mobile {
-        display: flex;
-        flex-direction: row;
+        display: hidden;
+        flex-direction: column;
         justify-content: center;
         background: linear-gradient(to right, #f1e4c3, white);
+        width: 50%;
+        padding-left: 2%;
+        position: relative;
     }
+
 
     .parent-container {
         display: flex;

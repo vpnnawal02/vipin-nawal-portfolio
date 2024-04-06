@@ -11,3 +11,21 @@ setInterval(() => {
         i = 0;
     }
 }, 2000);
+
+let button = document.querySelector(".menu-icon")
+let menu = document.querySelector(".nav-links-for-mobile");
+let options = 'visible'
+
+button.addEventListener("click", function () {
+    if (options === 'hidden') {
+        menu.style.display = "none";
+        options = 'visible'
+    }
+
+    else {
+        menu.style.display = "flex";
+        options = 'hidden';
+    }
+
+})
+
