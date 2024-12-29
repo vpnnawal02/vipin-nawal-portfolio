@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #dfd3c3;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-links-for-mobile {
+    display: none;
+}
+
+.header-name {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    margin-left: 5%;
+}
+
+.header-name:hover {
+    cursor: default;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+    /* margin-right: 7%; */
+
+}
+
+.navlink {
+    margin-right: 3%;
+    padding: 2px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.navlink:visited {
+    color: #27296d;
+}
+
+.navlink:active {
+    color: darkblue;
+}
+
+.dark-mode {
+    width: 2%;
+    padding: 1%;
+}
+
+.dark-mode:hover {
+    cursor: pointer;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #27296d;
+    font-weight: bold;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.main-container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-1 {
+    background-image: url(/usedIn/achievements/pyCertificate.png);
+    width: 100%;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    position: relative;
+
+}
+
+.image-text {
+    position: absolute;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 30%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    cursor: default;
+    z-index: 1;
+    color: black;
+}
+
+
+img {
+    display: flex;
+    flex-direction: row;
+    width: 45vh;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+img:hover {
+    filter: blur(4px);
+    cursor: pointer;
+    z-index: 0;
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width:850px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 10px;
+    }
+
+    .menu-icon {
+        display: inline;
+        width: 100%;
+    }
+
+    .menu-button {
+        display: flex;
+        width: 35px;
+    }
+
+    .header-name {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .name {
+        display: block;
+        text-align: center;
+    }
+
+    .role {
+        display: block;
+        text-align: center;
+        align-items: center;
+        font-size: small;
+        color: gray;
+    }
+
+    .nav-links {
+        display: none;
+        padding: 1%;
+    }
+
+    .navlink {
+        font-size: large;
+        text-decoration: none;
+        margin: 1%;
+    }
+
+    .nav-links-for-mobile {
+        display: flex;
+        justify-content: center;
+        background-color: #dfd3c3;
+        width: 100%;
+        padding-left: 2%;
+        border: none;
+    }
+
+    .nav-links-for-mobile a {
+        font-size: 90%;
+    }
+
+
+    .row-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgs {
+        margin: 0;
+    }
+
+    img {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+}
