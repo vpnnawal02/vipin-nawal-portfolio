@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #dfd3c3;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-links-for-mobile {
+    display: none;
+}
+
+.header-name {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    margin-left: 5%;
+}
+
+.header-name:hover {
+    cursor: default;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+    /* margin-right: 7%; */
+
+}
+
+.navlink {
+    margin-right: 3%;
+    padding: 2px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.navlink:visited {
+    color: #27296d;
+}
+
+.navlink:active {
+    color: darkblue;
+}
+
+.dark-mode {
+    width: 2%;
+    padding: 1%;
+}
+
+.dark-mode:hover {
+    cursor: pointer;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #27296d;
+    font-weight: bold;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;
+    color: darkblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 500%;
+    cursor: default;
+}
+
+.header-of-contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 2%;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+
+input[type=text] {
+    width: 100%;
+    height: 4vh;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 1%;
+    height: max-content;
+
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding-right: 2%;
+    height: max-content;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.Name {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+textarea {
+    width: 90%;
+    margin: 3%;
+    height: 10vh;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: darkblue;
+    border-style: none;
+    border-radius: 5px;
+    font-size: large;
+    width: 15%;
+    height: 4vh;
+}
+
+
+@media only screen and (max-width:850px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 10px;
+    }
+
+    .menu-icon {
+        display: inline;
+        width: 100%;
+    }
+
+    .menu-button {
+        display: flex;
+        width: 35px;
+    }
+
+    .header-name {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .name {
+        display: block;
+        text-align: center;
+    }
+
+    .role {
+        display: block;
+        text-align: center;
+        align-items: center;
+        font-size: small;
+        color: gray;
+    }
+
+    .nav-links {
+        display: none;
+        padding: 1%;
+    }
+
+    .navlink {
+        font-size: large;
+        text-decoration: none;
+        margin: 1%;
+    }
+
+    .nav-links-for-mobile {
+        display: flex;
+        justify-content: center;
+        background-color: #dfd3c3;
+        width: 100%;
+        padding-left: 2%;
+        border: none;
+    }
+
+    .nav-links-for-mobile a {
+        font-size: 90%;
+    }
+
+
+    .main {
+        background-color: #f0ece2;
+        margin-top: 5%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 250%;
+    }
+
+    h1 p {
+        font-size: 30%;
+        color: black;
+    }
+
+    .main .contact-links {
+        width: 90%;
+        background-color: #dfd3c3;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .contact-links .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .main .contact-links img {
+        width: 10%;
+    }
+
+    .main .contact-links .box a {
+        text-decoration: none;
+        color: #27296d;
+        font-weight: 600;
+    }
+
+    .main .contact-links .box p {
+        text-decoration: none;
+        color: #27296d;
+        font-weight: 600;
+    }
+
+    hr {
+        color: #27296d;
+    }
+
+}
