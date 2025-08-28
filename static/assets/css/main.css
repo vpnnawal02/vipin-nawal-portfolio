@@ -99,17 +99,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -176,12 +165,18 @@ h6 {
   background: var(--accent-color);
 }
 
+
+.scroll-down {
+  display: none;
+}
+
 @media (min-width: 1200px) {
 
   .header~main,
   .header~#footer {
     margin-left: 300px;
   }
+
 }
 
 @media (max-width: 1199px) {
