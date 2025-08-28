@@ -1,6 +1,7 @@
 # Vipin Nawal - Portfolio Website 🚀
 
 Welcome to my personal portfolio website! A modern, responsive web application showcasing my journey as a **Full-Stack Developer** and **Educator**.
+Live view: https://vipin-nawal.onrender.com
 
 ## 🌟 About Me
 
