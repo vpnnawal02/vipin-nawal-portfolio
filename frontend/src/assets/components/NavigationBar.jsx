@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { FiAlignRight } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,16 +16,30 @@ const NavigationBar = () => {
 
                 <div className="hidden sm:flex">
                     <ul className='flex gap-10 '>
-                        <a href="#home"><li className='hover:text-purple-500'>HOME</li></a>
-                        <a href="#about"><li className='hover:text-purple-500'>ABOUT</li></a>
-                        <a href="#resume"><li className='hover:text-purple-500'>RESUME</li></a>
-                        <a href="#projects"><li className='hover:text-purple-500'>PROJECTS</li></a>
-                        <a href="#reviews"><li className='hover:text-purple-500'>REVIEWS</li></a>
+                        <a href="#home"><li className='hover:text-purple-500 duration-200'>HOME</li></a>
+                        <a href="#about"><li className='hover:text-purple-500 duration-200'>ABOUT</li></a>
+                        <a href="#resume"><li className='hover:text-purple-500 duration-200'>RESUME</li></a>
+                        <a href="#projects"><li className='hover:text-purple-500 duration-200'>PROJECTS</li></a>
+                        <a href="#reviews"><li className='hover:text-purple-500 duration-200'>REVIEWS</li></a>
                     </ul>
                 </div>
 
-                <div className="hidden">
-                    social links
+                <div className="hidden md:flex gap-3">
+                    <div className="">
+                        <a href="https://www.facebook.com/profile.php?id=100008160219044" target="_blank">
+                            <FaFacebook className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                        </a>
+                    </div>
+                    <div className="">
+                        <a href="https://github.com/vpnnawal02" target='_blank'>
+                            <FaGithub className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                        </a>
+                    </div>
+                    <div className="">
+                        <a href="https://www.linkedin.com/in/vipin-nawal02/" target="_blank">
+                            <FaLinkedin className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                        </a>
+                    </div>
                 </div>
 
                 {/* mobile icon */}
@@ -34,8 +51,8 @@ const NavigationBar = () => {
 
             {/* mobile menu */}
             <div className={`
-    sm:hidden fixed inset-0 bg-gray-950 backdrop-blur-sm z-40
-    transition-all duration-300 ease-in-out mt-20
+    sm:hidden fixed inset-0 bg-white-95 backdrop-blur-sm z-40
+    transition-all duration-300 ease-in-out mt-21 w-[70%] left-[30%]
     ${isMenuOpen
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-0 translate-x-full'
@@ -49,6 +66,23 @@ const NavigationBar = () => {
                         <a href="#projects"><li>PROJECTS</li></a>
                         <a href="#reviews"><li>REVIEWS</li></a>
                     </ul>
+                    <div className="flex sm:hidden gap-3 py-5">
+                        <div className="">
+                            <a href="https://www.facebook.com/profile.php?id=100008160219044" target="_blank">
+                                <FaFacebook className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                            </a>
+                        </div>
+                        <div className="">
+                            <a href="https://github.com/vpnnawal02" target='_blank'>
+                                <FaGithub className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                            </a>
+                        </div>
+                        <div className="">
+                            <a href="https://www.linkedin.com/in/vipin-nawal02/" target="_blank">
+                                <FaLinkedin className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
+                            </a>
+                        </div>
+                    </div>
                     <button className='bg-purple-500 py-2 px-2 rounded-sm text-white font-bold my-5'>DOWNLOAD RESUME</button>
                 </div>
             </div>
