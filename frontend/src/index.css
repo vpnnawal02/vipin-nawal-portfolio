@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+}
+
+@keyframes bounce-soft {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.bounce-soft {
+  animation: bounce-soft 2s infinite ease-in-out;
+}
