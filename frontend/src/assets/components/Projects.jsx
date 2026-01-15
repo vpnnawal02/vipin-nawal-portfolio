@@ -1,5 +1,5 @@
 import React from 'react'
-import Projectcard from '../utils/Projectcard'
+import Projectcard from '../utils/ProjectCard.jsx'
 import { FaArrowRightLong } from "react-icons/fa6";
 import hustle_learning from '../imgs/project_images/hustle_learning.png'
 import cafe_website from '../imgs/project_images/cafe_website.png'
