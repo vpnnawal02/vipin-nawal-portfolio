@@ -3,7 +3,7 @@ import about_image from '../imgs/about.png'
 
 const About = () => {
     return (
-        <div className='flex flex-col items-center py-10 '>
+        <div className='flex flex-col items-center py-10 ' id='about'>
 
             <h1 className='text-5xl font-extrabold my-5'>ABOUT <span className='text-purple-500'>ME</span></h1>
 

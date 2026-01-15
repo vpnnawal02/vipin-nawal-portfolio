@@ -2,7 +2,7 @@ import React from 'react'
 
 const ResumeSection = () => {
     return (
-        <section className="max-w-6xl mx-auto px-6 py-12">
+        <section className="max-w-6xl mx-auto px-6 py-12" id='resume'>
             <center><h1 className='text-5xl font-extrabold my-10'>MY <span className='text-purple-500'>RESUME</span></h1></center>
 
             <div className="grid md:grid-cols-2 gap-12">
@@ -132,7 +132,6 @@ const ResumeSection = () => {
                     <button className='border-purple-500 border-2 py-2 px-2 rounded-sm text-white my-5 shadow-md hover:cursor-pointer hover:bg-purple-500 transition duration-200 hover:shadow-purple-400  hover:shadow-[0_0_20px_5px_rgba(0,0,0,0.3)]'>DOWNLOAD RESUME
                     </button>
                 </a>
-
             </center>
 
         </section>

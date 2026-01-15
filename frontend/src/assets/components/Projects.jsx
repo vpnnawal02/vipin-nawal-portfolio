@@ -9,11 +9,11 @@ import shoe_shopping from '../imgs/project_images/shoe_shopping.png'
 const Projects = () => {
     return (
         <>
-            <div className="flex flex-col items-center">
-                <h1 className='text-5xl font-extrabold my-5'>MY <span className='text-purple-500'>PROJECTS</span></h1>
-                <div className="flex">
+            <h1 className='text-5xl font-extrabold my-5 text-center' id='projects'>MY <span className='text-purple-500'>PROJECTS</span></h1>
 
-                    <div className='flex flex-col justify-around gap-10 md:flex-row hover:'>
+            <div className="flex justify-center">
+                <div className="flex flex-col items-center overflow-scroll sm:overflow-auto ">
+                    <div className='flex gap-10 w-full '>
 
                         {/* project-1 */}
                         <Projectcard

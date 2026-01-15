@@ -24,3 +24,47 @@ body {
 .bounce-soft {
   animation: bounce-soft 2s infinite ease-in-out;
 }
+
+.marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.marquee-card .icon {
+  font-size: 1.75rem;
+}
+
+.marquee-card .label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-25%);
+  }
+}
