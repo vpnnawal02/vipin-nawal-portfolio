@@ -26,8 +26,8 @@ const Projects = () => {
                             ts4='Tailwind'
                             ts5='Bootstrap'
                             ts6='Render'
-                            github_link=''
-                            live_link=''
+                            github_link='https://github.com/vpnnawal02/hustleLearning.in'
+                            live_link='https://hustlelearning-in-0kjy.onrender.com/'
                         />
 
                         {/* project-2 */}
@@ -41,8 +41,8 @@ const Projects = () => {
                             ts4='FastAPI'
                             ts5='CORS'
                             ts6='Render/Netlify'
-                            github_link=''
-                            live_link=''
+                            github_link='https://github.com/vpnnawal02/ovenkissed-cats-cafe'
+                            live_link='https://frabjous-elf-35e678.netlify.app/'
                         />
 
                         {/* project-3 */}
@@ -56,8 +56,8 @@ const Projects = () => {
                             ts4='Flask'
                             ts5='Render'
                             ts6='Python'
-                            github_link=''
-                            live_link=''
+                            github_link='https://github.com/vpnnawal02/gymshala-static-website'
+                            live_link='https://gymshala-static-website.onrender.com/'
                         />
 
                         {/* project-4 */}
@@ -71,8 +71,8 @@ const Projects = () => {
                             ts4='UX/UI'
                             ts5='Github'
                             ts6='Design'
-                            github_link=''
-                            live_link=''
+                            github_link='https://github.com/vpnnawal02/shoes-shopping-website'
+                            live_link='https://vpnnawal02.github.io/shoes-shopping-website/'
                         />
                     </div>
                 </div>

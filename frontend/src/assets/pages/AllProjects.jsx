@@ -4,6 +4,8 @@ import hustle_learning from "../imgs/project_images/hustle_learning.png";
 import cafe_website from "../imgs/project_images/cafe_website.png";
 import gymshala from "../imgs/project_images/gymshala.png";
 import shoe_shopping from "../imgs/project_images/shoe_shopping.png";
+import per_capita from "../imgs/project_images/per_capita.png"
+import notary from "../imgs/project_images/notary.png"
 
 const projectsData = [
     {
@@ -18,8 +20,8 @@ const projectsData = [
         ts4: "Tailwind",
         ts5: "Bootstrap",
         ts6: "Render",
-        github_link: "",
-        live_link: "",
+        github_link: 'https://github.com/vpnnawal02/hustleLearning.in',
+        live_link: 'https://hustlelearning-in-0kjy.onrender.com/',
         category: "Full-Stack",
     },
     {
@@ -34,8 +36,8 @@ const projectsData = [
         ts4: "FastAPI",
         ts5: "CORS",
         ts6: "Render/Netlify",
-        github_link: "",
-        live_link: "",
+        github_link: 'https://github.com/vpnnawal02/ovenkissed-cats-cafe',
+        live_link: 'https://frabjous-elf-35e678.netlify.app/',
         category: "Full-Stack",
     },
     {
@@ -50,8 +52,8 @@ const projectsData = [
         ts4: "Flask",
         ts5: "Render",
         ts6: "Python",
-        github_link: "",
-        live_link: "",
+        github_link: 'https://github.com/vpnnawal02/gymshala-static-website',
+        live_link: 'https://gymshala-static-website.onrender.com/',
         category: "Full-Stack",
     },
     {
@@ -65,24 +67,38 @@ const projectsData = [
         ts4: "UX/UI",
         ts5: "Github",
         ts6: "Design",
-        github_link: "",
-        live_link: "",
+        github_link: 'https://github.com/vpnnawal02/shoes-shopping-website',
+        live_link: 'https://vpnnawal02.github.io/shoes-shopping-website/',
         category: "Frontend",
     },
-    ,
     {
-        id: "shoeshopping-2",
-        name: "SHOE-SHOPPING",
-        image: shoe_shopping,
-        description: "A modern shoe shopping website with a clean, user-friendly design.",
+        id: "indiapercapita",
+        name: "INDIAN-ECONOMY-ANALYSIS",
+        image: per_capita,
+        description: "Analysed Indian economy to per capita income of the Country.",
+        ts1: "Python",
+        ts2: "Matplotlib",
+        ts3: "Numpy",
+        ts4: "Pandas",
+        ts5: "Github",
+        ts6: "Image Generation",
+        github_link: "https://github.com/vpnnawal02/Indian-Economy-Analysis",
+        live_link: "https://github.com/vpnnawal02/Indian-Economy-Analysis",
+        category: "Others",
+    },
+    {
+        id: "notary",
+        name: "NOTARY - BOOK READINGG",
+        image: notary,
+        description: "Created a book reading website with the features of searching and counting words.",
         ts1: "HTML",
         ts2: "CSS",
         ts3: "Javascript",
-        ts4: "UX/UI",
+        ts4: "UI/UX",
         ts5: "Github",
-        ts6: "Design",
-        github_link: "",
-        live_link: "",
+        ts6: "Github Pages",
+        github_link: "https://github.com/vpnnawal02/book-reading-website",
+        live_link: "https://vpnnawal02.github.io/book-reading-website/",
         category: "Frontend",
     },
 ];
