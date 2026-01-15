@@ -10,7 +10,7 @@ const Hero = () => {
 
             <div className="mt-10 px-10">
                 <p className='text-3xl my-5 sm:text-5xl md:text'>HELLO, <br />
-                    <span className='font-bold text-4xl sm:text-6xl'>I AM VIPIN NAWAL</span>
+                    <span className='font-bold text-4xl sm:text-6xl '>I AM <span className='text-purple-500 decoration-1 underline underline-offset-10'>VIPIN NAWAL</span></span>
                 </p>
                 <p className='text-2xl sm:text-3xl sm:pt-5'>FULL STACK SOFTWARE DEVELOPER</p>
             </div>

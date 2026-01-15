@@ -129,7 +129,7 @@ const ResumeSection = () => {
             </div>
             <center>
                 <a href="https://drive.usercontent.google.com/u/0/uc?id=1YOwElvVv8NZGBQSUvfGOqffXLJ8rqABD&export=download">
-                    <button className='border-purple-500 border-2 py-2 px-2 rounded-sm text-white my-5 shadow-md hover:cursor-pointer hover:bg-purple-500 transition duration-200'>DOWNLOAD RESUME
+                    <button className='border-purple-500 border-2 py-2 px-2 rounded-sm text-white my-5 shadow-md hover:cursor-pointer hover:bg-purple-500 transition duration-200 hover:shadow-purple-400  hover:shadow-[0_0_20px_5px_rgba(0,0,0,0.3)]'>DOWNLOAD RESUME
                     </button>
                 </a>
 

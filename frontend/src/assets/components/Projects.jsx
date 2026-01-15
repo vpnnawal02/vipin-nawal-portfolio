@@ -13,7 +13,7 @@ const Projects = () => {
                 <h1 className='text-5xl font-extrabold my-5'>MY <span className='text-purple-500'>PROJECTS</span></h1>
                 <div className="flex">
 
-                    <div className='flex flex-col justify-around gap-10 md:flex-row'>
+                    <div className='flex flex-col justify-around gap-10 md:flex-row hover:'>
 
                         {/* project-1 */}
                         <Projectcard
@@ -78,7 +78,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center py-10 ">
-                <a href="" className='flex items-center gap-1 border-purple-500 border-2 py-2 px-2 rounded-sm my-5 shadow-md hover:cursor-pointer hover:bg-purple-500 transition duration-200'>
+                <a href="/all-projects" className='flex items-center gap-1 border-purple-500 border-2 py-2 px-2 rounded-sm my-5 shadow-md hover:cursor-pointer hover:bg-purple-500 transition duration-200 hover:shadow-purple-400  hover:shadow-[0_0_20px_5px_rgba(0,0,0,0.3)]'>
                     <p>SEE ALL PROJECTS</p><FaArrowRightLong />
                 </a>
             </div>

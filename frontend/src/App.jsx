@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import NavigationBar from './assets/components/NavigationBar'
-import Hero from './assets/components/Hero'
-import About from './assets/components/About'
-import ResumeSection from './assets/components/Resumesection'
-import ProjectCard from './assets/utils/Projectcard'
-import Projects from './assets/components/Projects'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import AllProjects from './assets/pages/AllProjects.jsx'
+import Home from './assets/pages/Home.jsx';
 
 function App() {
 
@@ -12,10 +9,11 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <Hero />
-      <About />
-      <ResumeSection />
-      <Projects />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/all-projects' element={<AllProjects />} />
+      </Routes>
+
     </>
   )
 }

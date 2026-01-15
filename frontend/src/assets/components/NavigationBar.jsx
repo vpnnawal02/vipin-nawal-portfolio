@@ -16,10 +16,10 @@ const NavigationBar = () => {
 
                 <div className="hidden sm:flex">
                     <ul className='flex gap-10 '>
-                        <a href="#home"><li className='hover:text-purple-500 duration-200'>HOME</li></a>
+                        <a href="/"><li className='hover:text-purple-500 duration-200'>HOME</li></a>
                         <a href="#about"><li className='hover:text-purple-500 duration-200'>ABOUT</li></a>
                         <a href="#resume"><li className='hover:text-purple-500 duration-200'>RESUME</li></a>
-                        <a href="#projects"><li className='hover:text-purple-500 duration-200'>PROJECTS</li></a>
+                        <a href="/all-projects"><li className='hover:text-purple-500 duration-200'>PROJECTS</li></a>
                         <a href="#reviews"><li className='hover:text-purple-500 duration-200'>REVIEWS</li></a>
                     </ul>
                 </div>
@@ -60,10 +60,10 @@ const NavigationBar = () => {
 `}>
                 <div className="sm:hidden h-screen flex flex-col items-center ">
                     <ul className='flex flex-col justify-around items-center h-[40%]'>
-                        <a href="#home"><li>HOME</li></a>
+                        <a href="/"><li>HOME</li></a>
                         <a href="#about"><li>ABOUT</li></a>
                         <a href="#resume"><li>RESUME</li></a>
-                        <a href="#projects"><li>PROJECTS</li></a>
+                        <a href="/all-projects"><li>PROJECTS</li></a>
                         <a href="#reviews"><li>REVIEWS</li></a>
                     </ul>
                     <div className="flex sm:hidden gap-3 py-5">
