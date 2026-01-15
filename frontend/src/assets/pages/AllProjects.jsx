@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Projectcard from "../utils/ProjecCard";
+import Projectcard from "../utils/ProjectCard";
 import hustle_learning from "../imgs/project_images/hustle_learning.png";
 import cafe_website from "../imgs/project_images/cafe_website.png";
 import gymshala from "../imgs/project_images/gymshala.png";
