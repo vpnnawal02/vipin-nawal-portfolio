@@ -6,6 +6,7 @@ import gymshala from "../imgs/project_images/gymshala.png";
 import shoe_shopping from "../imgs/project_images/shoe_shopping.png";
 import per_capita from "../imgs/project_images/per_capita.png"
 import notary from "../imgs/project_images/notary.png"
+import salon from "../imgs/project_images/salon.png"
 
 const projectsData = [
     {
@@ -54,6 +55,21 @@ const projectsData = [
         ts6: "Python",
         github_link: 'https://github.com/vpnnawal02/gymshala-static-website',
         live_link: 'https://gymshala-static-website.onrender.com/',
+        category: "Full-Stack",
+    },
+    {
+        id: "salon",
+        name: "SALON",
+        image: salon,
+        description: "A modern Salon website with a booking form.",
+        ts1: 'ReactJS',
+        ts2: 'Tailwind',
+        ts3: 'FastAPI',
+        ts4: 'UX/UI',
+        ts5: 'Python',
+        ts6: 'Netlify',
+        github_link: "https://github.com/vpnnawal02/salon-landing-page",
+        live_link: "https://vipin-salon.netlify.app/",
         category: "Full-Stack",
     },
     {
