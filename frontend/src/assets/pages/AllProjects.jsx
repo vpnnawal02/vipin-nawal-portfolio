@@ -7,6 +7,7 @@ import shoe_shopping from "../imgs/project_images/shoe_shopping.png";
 import per_capita from "../imgs/project_images/per_capita.png"
 import notary from "../imgs/project_images/notary.png"
 import salon from "../imgs/project_images/salon.png"
+import vai from "../imgs/project_images/vai.png"
 
 const projectsData = [
     {
@@ -56,6 +57,22 @@ const projectsData = [
         github_link: 'https://github.com/vpnnawal02/gymshala-static-website',
         live_link: 'https://gymshala-static-website.onrender.com/',
         category: "Full-Stack",
+    },
+    {
+        id: "chatbot",
+        name: "AI CHATBOT",
+        image: vai,
+        description:
+            "An AI chatbot. Uses openAI gpt model in backend for thinking.",
+        ts1: "ReactJS",
+        ts2: "Tailwind",
+        ts3: "API",
+        ts4: "Github",
+        ts5: "GPT Model",
+        ts6: "API Integration",
+        github_link: 'https://github.com/vpnnawal02/ai-chatbot',
+        live_link: 'https://github.com/vpnnawal02/ai-chatbot',
+        category: "Frontend",
     },
     {
         id: "salon",
