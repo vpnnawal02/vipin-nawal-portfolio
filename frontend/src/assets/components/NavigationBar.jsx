@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <nav className='fixed w-full shadow-sm  text-white bg-gray-950/70 backdrop-blur-sm z-50'>
+        <nav className='fixed w-full shadow-sm  text-white bg-gray-950/70 sm:backdrop-blur-sm z-50'>
             <div className="flex justify-around items-center py-5">
                 <div className=" text-3xl font-bold">
                     VIPIN <span className='text-purple-500'>NAWAL</span>
@@ -51,7 +51,7 @@ const NavigationBar = () => {
 
             {/* mobile menu */}
             <div className={`
-    sm:hidden fixed inset-0 bg-white-95 backdrop-blur-sm z-40
+    sm:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40
     transition-all duration-300 ease-in-out mt-20 w-[70%] left-[30%]
     ${isMenuOpen
                     ? 'opacity-100 translate-x-0'

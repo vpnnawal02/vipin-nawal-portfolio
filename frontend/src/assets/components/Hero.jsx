@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className='flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-around lg:px-50 lg:pt-10 h-screen'>
             <video
-                className='absolute inset-0 object-cover z-0 h-screen'
+                className='absolute inset-0 object-cover z-0 h-full'
                 autoPlay
                 loop
                 muted
