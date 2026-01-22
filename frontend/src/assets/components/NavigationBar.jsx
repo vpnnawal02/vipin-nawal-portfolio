@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <nav className='fixed w-full shadow-sm shadow-purple-500 text-white bg-gray-950 z-50'>
+        <nav className='fixed w-full shadow-sm  text-white bg-gray-950/70 backdrop-blur-sm z-50'>
             <div className="flex justify-around items-center py-5">
                 <div className=" text-3xl font-bold">
                     VIPIN <span className='text-purple-500'>NAWAL</span>
@@ -16,11 +16,11 @@ const NavigationBar = () => {
 
                 <div className="hidden sm:flex">
                     <ul className='flex gap-10 '>
-                        <a href="/"><li className='hover:text-purple-500 duration-200'>HOME</li></a>
-                        <a href="#about"><li className='hover:text-purple-500 duration-200'>ABOUT</li></a>
-                        <a href="#resume"><li className='hover:text-purple-500 duration-200'>RESUME</li></a>
-                        <a href="/all-projects"><li className='hover:text-purple-500 duration-200'>PROJECTS</li></a>
-                        <a href="#reviews"><li className='hover:text-purple-500 duration-200'>REVIEWS</li></a>
+                        <a href="/"><li className='hover:underline decoration-2 underline-offset-30  duration-200'>HOME</li></a>
+                        <a href="#about"><li className=' hover:underline decoration-2 underline-offset-30  duration-200'>ABOUT</li></a>
+                        <a href="#resume"><li className='hover:underline decoration-2 underline-offset-30  duration-200'>RESUME</li></a>
+                        <a href="/all-projects"><li className='hover:underline decoration-2 underline-offset-30  duration-200'>PROJECTS</li></a>
+                        <a href="#reviews"><li className='hover:underline decoration-2 underline-offset-30  duration-200    '>REVIEWS</li></a>
                     </ul>
                 </div>
 
@@ -52,7 +52,7 @@ const NavigationBar = () => {
             {/* mobile menu */}
             <div className={`
     sm:hidden fixed inset-0 bg-white-95 backdrop-blur-sm z-40
-    transition-all duration-300 ease-in-out mt-21 w-[70%] left-[30%]
+    transition-all duration-300 ease-in-out mt-20 w-[70%] left-[30%]
     ${isMenuOpen
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-0 translate-x-full'
