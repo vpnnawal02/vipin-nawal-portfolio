@@ -4,11 +4,27 @@ import { FiAlignRight } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [dark, setDark] = useState(false)
+
+    let currentMode = 'light'
+
+    if (dark) {
+        currentMode = 'light'
+        console.log(currentMode);
+    }
+    else if (setDark) {
+        currentMode = 'dark'
+        console.log(currentMode);
+    }
+
+
     return (
-        <nav className='fixed w-full shadow-sm  text-white bg-gray-950/70 sm:backdrop-blur-sm z-50'>
+        <nav className='fixed w-full shadow-sm shadow-purple-500  text-white bg-gray-950/70 sm:backdrop-blur-sm z-50 '>
             <div className="flex justify-around items-center py-5">
                 <div className=" text-3xl font-bold">
                     VIPIN <span className='text-purple-500'>NAWAL</span>
@@ -40,6 +56,16 @@ const NavigationBar = () => {
                             <FaLinkedin className='w-6 h-auto hover:text-purple-500 cursor-pointer duration-200' />
                         </a>
                     </div>
+                </div>
+
+                <div className="">
+                    <MdOutlineLightMode className='w-7 h-auto cursor-pointer hover:rotate-30 duration-500'
+                        onClick={() => setDark(!dark)}
+
+                    />
+                    <MdOutlineDarkMode className='w-7 h-auto cursor-pointer hover:rotate-20 duration-500 hidden'
+                        onClick={() => setDark(!dark)}
+                    />
                 </div>
 
                 {/* mobile icon */}

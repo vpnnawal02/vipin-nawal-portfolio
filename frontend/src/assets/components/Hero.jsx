@@ -5,17 +5,7 @@ import profileImg from "../imgs/me_github.png";
 const Hero = () => {
     return (
         <div className='flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-around lg:px-50 lg:pt-10 h-screen'>
-            <video
-                className='absolute inset-0 object-cover z-0 h-full'
-                autoPlay
-                loop
-                muted
-                playsInline
-            >
-                <source src='/hero_bg_vid.mp4' type='video/mp4' />
-                Your browser does not support the video tag.
-            </video>
-            <div className='absolute inset-0 bg-gradient-to-r from-black/80 to-black/80 z-5'></div>
+            <div className='absolute inset-0 bg-gray-950 z-5'></div>
             <div className="text-white mt-30 z-10">
                 <img src={profileImg} alt="profileImage" className='w-40 rounded-full shadow-purple-400 shadow-[0_0_20px_5px_rgba(0,0,0,0.3)] bounce-soft sm:w-90' />
             </div>
