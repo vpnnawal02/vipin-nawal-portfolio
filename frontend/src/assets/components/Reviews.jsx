@@ -63,7 +63,7 @@ const Reviews = () => {
                 >
                     {reviews.map((review, i) => (
                         <div key={i} className="min-w-full px-4">
-                            <div className="bg-gray-950  p-8 rounded-xl text-center border border-purple-500">
+                            <div className="bg-transparent  p-8 rounded-xl text-center border border-purple-500">
 
                                 {/* Stars */}
                                 <div className="flex justify-center gap-1 text-purple-500 text-xl mb-4">
@@ -78,7 +78,7 @@ const Reviews = () => {
                                 </p>
 
                                 {/* Name */}
-                                <h3 className="mt-4 text-black font-semibold">
+                                <h3 className="mt-4  font-semibold">
                                     — {review.name}
                                 </h3>
                             </div>

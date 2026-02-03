@@ -10,10 +10,10 @@ import salon from '../imgs/project_images/salon.png'
 const Projects = () => {
     return (
         <>
-            <h1 className='text-5xl font-extrabold my-5 text-center' id='projects'>MY <span className='text-purple-500'>PROJECTS</span></h1>
+            <h1 className='text-5xl font-extrabold my-5 text-center' id="projects">MY <span className='text-purple-500'>PROJECTS</span></h1>
 
-            <div className="flex justify-center">
-                <div className="flex flex-col items-center overflow-scroll sm:overflow-auto ">
+            <div className="flex justify-center ">
+                <div className="flex flex-col items-center overflow-scroll sm:overflow-auto py-5 px-5">
                     <div className='flex gap-10 w-full '>
 
                         {/* project-1 */}

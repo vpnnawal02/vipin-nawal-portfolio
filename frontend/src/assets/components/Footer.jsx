@@ -2,7 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-gray-950 border-t border-purple-500 mt-10">
+        <footer className="w-full bg-gray-950 border-t border-purple-500 mt-10"
+            id="footer">
             <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-24 py-10">
 
                 {/* Top Section */}

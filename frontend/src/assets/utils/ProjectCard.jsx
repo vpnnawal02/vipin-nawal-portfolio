@@ -5,7 +5,7 @@ import { FaLink } from "react-icons/fa";
 const Projectcard = ({ name, image, description, ts1, ts2, ts3, ts4, ts5, ts6, github_link, live_link }) => {
     return (
         // main container
-        <div className='w-75 h-105 border border-purple-500 flex flex-col items-center rounded-lg hover:shadow-purple-400 shadow-[0_0_20px_5px_rgba(0,0,0,0.3)]'>
+        <div className='w-75 h-105 border border-purple-500 flex flex-col items-center rounded-lg hover:shadow-purple-400 shadow-[0_0_20px_5px_rgba(0,0,0,0.3)]' id="projectcard">
 
             {/* sub-container */}
             <div className=" m-2 w-70 h-full text-center">
