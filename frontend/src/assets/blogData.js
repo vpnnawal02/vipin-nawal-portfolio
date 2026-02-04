@@ -14,6 +14,14 @@ const blogData = [
         author: "Vipin Nawal",
         date: "Nov 20, 2025"
     },
+    {
+        id: 3,
+        title: "I Learned Depth Through Loss",
+        content: "I didn’t just lose a person. I lost a version of my life I had already started living in my head. I thought love was something you hold onto, something that stays if you care enough. But now I see—it isn’t possession, it’s permission. Permission to feel deeply, even when there’s no guarantee of forever. What hurts the most is not the absence. It’s the silence where dreams used to speak. I gave my honesty, my patience, my vulnerability without calculation. And maybe that’s why it hurts this way. But I don’t regret it. If loving fully leads to pain, I would still choose to love fully—because a guarded heart survives, but it never lives. This loss didn’t empty me. It exposed me. It showed me how deeply I can attach, how strongly I can hope, how human I am. I now understand that love doesn’t fail us; it teaches us. Sometimes gently. Sometimes by breaking us open. I am learning that not everything meant for me is meant to stay. Some people come only to change the way I see myself, the world, and my own capacity to feel. So I’m not bitter. I’m quieter. More aware. Less naïve. I carry the pain, but I also carry the proof that I once loved without fear. And that matters to me. Because even in loss, I didn’t lose myself. I am still here— changed, scarred, but deeper than before.",
+        author: "Vipin Nawal",
+        date: "Feb 05, 2026"
+    },
+
 
 ];
 
