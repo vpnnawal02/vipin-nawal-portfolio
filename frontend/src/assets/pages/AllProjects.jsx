@@ -114,7 +114,7 @@ const projectsData = [
         ts3: "Numpy",
         ts4: "Pandas",
         ts5: "Github",
-        ts6: "Image Generation",
+        ts6: "Img Gen",
         github_link: "https://github.com/vpnnawal02/Indian-Economy-Analysis",
         live_link: "https://github.com/vpnnawal02/Indian-Economy-Analysis",
         category: "Others",

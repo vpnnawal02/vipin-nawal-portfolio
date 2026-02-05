@@ -8,7 +8,7 @@ const BlogCard = ({ blog }) => {
     }
 
     return (
-        <div className='w-[95%] md:w-[80%] lg:w-[65%] flex flex-col mb-8 border-2 rounded-xl md:p-10 p-5 border-purple-500/30 bg-gradient-to-br from-purple-50/5 to-transparent hover:border-purple-500/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20'>
+        <div className='w-[95%] md:w-[80%] lg:w-[65%] flex flex-col mb-8 border-2 rounded-sm md:p-10 p-5 border-purple-500/30 bg-gradient-to-br from-purple-50/5 to-transparent hover:border-purple-500/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20'>
             <div className="mb-6">
                 <h1 className="text-3xl md:text-4xl font-bold mb-3 text-purple-500 hover:text-purple-400 transition-colors">
                     {blog.title}
