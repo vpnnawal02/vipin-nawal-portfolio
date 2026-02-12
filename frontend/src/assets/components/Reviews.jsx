@@ -54,7 +54,7 @@ const Reviews = () => {
             </div>
 
             {/* Slider Wrapper */}
-            <div className="relative w-[90%] sm:w-[80%] lg:w-[50%] overflow-hidden">
+            <div className="relative w-[90%] md:w-[80%] xl:w-[50%] overflow-hidden">
 
                 {/* Slides */}
                 <div
