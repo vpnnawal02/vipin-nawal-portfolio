@@ -17,7 +17,7 @@ const NavigationBar = () => {
                 <div className="flex justify-around items-center py-5">
                     {/* Logo */}
                     <div className="text-3xl font-bold">
-                        VIPIN <span className="text-purple-500">NAWAL</span>
+                        &lt;/ VIPIN <span className="text-purple-500">NAWAL /&gt;</span>
                     </div>
 
                     {/* Desktop Menu */}
@@ -55,15 +55,15 @@ const NavigationBar = () => {
                         <FiAlignRight className="w-10 h-10" />
                     </div>
                 </div>
-            </nav>
+            </nav >
             {/* Mobile Menu */}
-            <div
+            < div
                 className={`sm:hidden fixed inset-0 z-40 transition-opacity duration-300
     ${isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
   `}
             >
                 {/* Overlay */}
-                <div
+                < div
                     className="absolute inset-0 overlay"
                     onClick={() => setIsMenuOpen(false)}
                 />
@@ -105,7 +105,7 @@ const NavigationBar = () => {
 
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };
