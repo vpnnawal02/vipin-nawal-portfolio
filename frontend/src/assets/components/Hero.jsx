@@ -1,11 +1,13 @@
 import React from 'react'
 import profileImg from "../imgs/me_github.png";
-// style={{ backgroundImage: "url('/header_bg.jpg')
+import Aurora from '../utils/Aurora';
 
 const Hero = () => {
     return (
-        <div className='flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-around lg:px-50 lg:pt-10 h-screen'
+        <div className='flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-around lg:px-50  h-screen'
             id="hero">
+            <Aurora colorStops={["#c966ff", "#B19EEF", "#5227FF"]} blend={0.5} amplitude={1.0} speed={1}
+            />
             <div className='absolute inset-0 bg-transparent z-5'></div>
             <div className=" mt-30 z-10">
                 <img src={profileImg} alt="profileImage" className='w-40 rounded-full shadow-purple-400 shadow-[0_0_20px_5px_rgba(0,0,0,0.3)] bounce-soft sm:w-90' />

@@ -1,35 +1,38 @@
 import React, { useState } from "react";
 import { FiAlignRight } from "react-icons/fi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
 import ThemeToggle from "./ThemeToggle";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <>
+        <div className="flex flex-col items-center">
             <nav
                 id="nav"
-                className="fixed w-full z-50 backdrop-blur-sm
-                 bg-transparent
-                 shadow-sm shadow-purple-500"
-            >
-                <div className="flex justify-around items-center py-5">
+                className="fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full">
+                <div className="flex justify-around items-center py-3">
                     {/* Logo */}
-                    <div className="text-3xl font-bold">
-                        &lt;/ VIPIN <span className="text-purple-500">NAWAL /&gt;</span>
+                    <div className="text-2xl md:text-3xl font-bold">
+                        VIPIN <span className="text-purple-500">NAWAL</span>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex">
                         <ul className="flex gap-10 md:gap-5 lg:gap-10 font-medium">
-                            <a href="/"><li className='hover:underline decoration-3 underline-offset-30  duration-200'>HOME</li></a>
-                            <a href="/blogs"><li className=' hover:underline decoration-3 underline-offset-30  duration-200'>BLOGS</li></a>
-                            <a href="#resume"><li className='hover:underline decoration-3 underline-offset-30  duration-200'>RESUME</li></a>
-                            <a href="/all-projects"><li className='hover:underline decoration-3 underline-offset-30  duration-200'>PROJECTS</li></a>
-                            <a href="#reviews"><li className='hover:underline decoration-3 underline-offset-30  duration-200    '>REVIEWS</li></a>
+                            <NavLink to='/' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>HOME</li></NavLink>
+                            <NavLink to='/blogs' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>BLOGS</li></NavLink>
+                            <NavLink to='#resume' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>RESUME</li></NavLink>
+                            <NavLink to='/all-projects' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>PROJECTS</li></NavLink>
+                            <NavLink to='#reviews' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>REVIEWS</li></NavLink>
                         </ul>
                     </div>
+
+
+
+
+
 
                     {/* Social Icons */}
                     <div className="hidden lg:flex gap-3 ">
@@ -45,7 +48,7 @@ const NavigationBar = () => {
                     </div>
 
                     {/* Theme Toggle */}
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
 
                     {/* Mobile Icon */}
                     <div
@@ -106,7 +109,7 @@ const NavigationBar = () => {
                     </div>
                 </div>
             </div >
-        </>
+        </div>
     );
 };
 
