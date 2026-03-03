@@ -8,7 +8,7 @@ import per_capita from "../imgs/project_images/per_capita.png"
 import notary from "../imgs/project_images/notary.png"
 import salon from "../imgs/project_images/salon.png"
 import vai from "../imgs/project_images/vai.png"
-import e_commerce from "../imgs/project_images/e_commerce.png"
+import e_commerce from "../imgs/project_images/e_commerce.png";
 
 const projectsData = [
     {

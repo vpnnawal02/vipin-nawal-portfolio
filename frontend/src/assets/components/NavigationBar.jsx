@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiAlignRight } from "react-icons/fi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
-import ThemeToggle from "./ThemeToggle";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const toggleBorder = () => {
+            setScrolled(window.scrollY > 500);
+        };
+
+        window.addEventListener("scroll", toggleBorder);
+        return () => window.removeEventListener("scroll", toggleBorder)
+    }, []);
 
     return (
         <div className="flex flex-col items-center">
             <nav
                 id="nav"
-                className="fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full">
+                className={scrolled ? 'fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full border border-purple-500' : 'fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full'}>
                 <div className="flex justify-around items-center py-3">
                     {/* Logo */}
                     <div className="text-2xl md:text-3xl font-bold">
