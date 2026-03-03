@@ -4,8 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import hustle_learning from '../imgs/project_images/hustle_learning.png'
 import cafe_website from '../imgs/project_images/cafe_website.png'
 import gymshala from '../imgs/project_images/gymshala.png'
-import shoe_shopping from '../imgs/project_images/shoe_shopping.png'
-import salon from '../imgs/project_images/salon.png'
+import e_commerce from '../imgs/project_images/e_commerce.png'
 
 const Projects = () => {
     return (
