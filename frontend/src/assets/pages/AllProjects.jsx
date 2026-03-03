@@ -8,6 +8,7 @@ import per_capita from "../imgs/project_images/per_capita.png"
 import notary from "../imgs/project_images/notary.png"
 import salon from "../imgs/project_images/salon.png"
 import vai from "../imgs/project_images/vai.png"
+import e_commerce from "../imgs/project_images/e_commerce"
 
 const projectsData = [
     {
@@ -40,6 +41,22 @@ const projectsData = [
         ts6: "Render/Netlify",
         github_link: 'https://github.com/vpnnawal02/ovenkissed-cats-cafe',
         live_link: 'https://frabjous-elf-35e678.netlify.app/',
+        category: "Full-Stack",
+    },
+    {
+        id: "ecommerce",
+        name: "FOREVER - E - COMMERCE",
+        image: e_commerce,
+        description:
+            "A full-stack e-commerce platform with product browsing, cart management, secure checkout, and dynamic order handling.",
+        ts1: "ReactJS",
+        ts2: "CSS",
+        ts3: "Javascript",
+        ts4: "Tailwind",
+        ts5: "NodeJS",
+        ts6: "Github",
+        github_link: 'https://github.com/vpnnawal02/e-commerce',
+        live_link: 'https://e-commerce-vipin.netlify.app/',
         category: "Full-Stack",
     },
     {

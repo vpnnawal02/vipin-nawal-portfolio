@@ -63,17 +63,19 @@ const Projects = () => {
 
                         {/* project-4 */}
                         <Projectcard
-                            name="SHOE-SHOPPING"
-                            image={shoe_shopping}
-                            description="A modern shoe shopping website with a clean, user-friendly design."
-                            ts1='HTML'
-                            ts2='CSS'
-                            ts3='Javascript'
-                            ts4='UX/UI'
-                            ts5='Github'
-                            ts6='Design'
-                            github_link='https://github.com/vpnnawal02/shoes-shopping-website'
-                            live_link='https://vpnnawal02.github.io/shoes-shopping-website/'
+                            name="FOREVER - E - COMMERCE"
+                            image={e_commerce}
+                            description=
+                            "A full-stack e-commerce platform with product browsing, cart management, secure checkout, and dynamic order handling."
+                            ts1="ReactJS"
+                            ts2="CSS"
+                            ts3="Javascript"
+                            ts4="Tailwind"
+                            ts5="NodeJS"
+                            ts6="Github"
+                            github_link='https://github.com/vpnnawal02/e-commerce'
+                            live_link='https://e-commerce-vipin.netlify.app/'
+                            category="Full-Stack"
                         />
                     </div>
                 </div>
