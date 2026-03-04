@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FiAlignRight } from "react-icons/fi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { RxCross2 } from "react-icons/rx";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const NavigationBar = () => {
         <div className="flex flex-col items-center">
             <nav
                 id="nav"
-                className={scrolled ? 'fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full border border-purple-500' : 'fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-transparent mt-5 rounded-full'}>
+                className={scrolled ? 'fixed w-[90%] lg:w-[80%] z-50 backdrop-blur-xs bg-black/40 mt-5 rounded-full border border-purple-500' : 'fixed w-[90%] lg:w-[80%] z-50 bg-black/40 backdrop-blur-xs  mt-5 rounded-full'}>
                 <div className="flex justify-around items-center py-3">
                     {/* Logo */}
                     <div className="text-2xl md:text-3xl font-bold">
@@ -28,15 +29,15 @@ const NavigationBar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex">
-                        <ul className="flex gap-10 md:gap-5 lg:gap-10 font-medium">
-                            <NavLink to='/' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>HOME</li></NavLink>
-                            <NavLink to='/blogs' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>BLOGS</li></NavLink>
-                            <NavLink to='#resume' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>RESUME</li></NavLink>
-                            <NavLink to='/all-projects' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>PROJECTS</li></NavLink>
-                            <NavLink to='#reviews' end><li className='hover:underline decoration-4 decoration-purple-500 underline-offset-20 duration-200'>REVIEWS</li></NavLink>
-                        </ul>
+
+                    <div className="hidden md:flex gap-10 md:gap-5 lg:gap-10 font-medium">
+                        <NavLink to='/' className='hover:text-purple-500'>HOME</NavLink>
+                        <NavLink to='/blogs' className='hover:text-purple-500'>BLOGS</NavLink>
+                        <NavLink to='/resume' className='hover:text-purple-500'>RESUME</NavLink>
+                        <NavLink to='/all-projects' className='hover:text-purple-500'>PROJECTS</NavLink>
+                        <NavLink to='/reviews' className='hover:text-purple-500'>REVIEWS</NavLink>
                     </div>
+
 
 
 
@@ -82,20 +83,25 @@ const NavigationBar = () => {
 
                 {/* Drawer */}
                 <div
-                    className={`absolute right-0 top-20 h-screen w-[70%] text-center
+                    className={`absolute bg-black w-full h-screen text-center
       mobile-menu
       transform transition-transform duration-300
       ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
     `}
                 >
-                    <div className="h-full flex flex-col items-center py-10">
-                        <ul className="flex flex-col gap-6 text-lg font-medium">
-                            <a href="/"><li>HOME</li></a>
-                            <a href="/blogs"><li>BLOGS</li></a>
-                            <a href="#resume"><li>RESUME</li></a>
-                            <a href="/all-projects"><li>PROJECTS</li></a>
-                            <a href="#reviews"><li>REVIEWS</li></a>
-                        </ul>
+                    <div className="h-full flex flex-col items-center py-20">
+                        <div className="flex flex-col gap-6 text-lg font-medium py-10">
+                            <NavLink to='/' className='hover:text-purple-500 rounded-sm'
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}>HOME</NavLink>
+                            <NavLink to='/blogs' className='hover:text-purple-500'
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}>BLOGS</NavLink>
+                            <NavLink to='/resume' className='hover:text-purple-500'
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}>RESUME</NavLink>
+                            <NavLink to='/all-projects' className='hover:text-purple-500'
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}>PROJECTS</NavLink>
+                            <NavLink to='/reviews' className='hover:text-purple-500'
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}>REVIEWS</NavLink>
+                        </div>
 
                         <div className="flex gap-5 pt-10">
                             <a href="https://www.facebook.com/profile.php?id=100008160219044" target="_blank">

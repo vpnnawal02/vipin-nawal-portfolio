@@ -68,7 +68,7 @@ const BlogList = () => {
                             All Articles
                         </h2>
                         <p className="text-[11px] mt-0.5
-                            text-black">
+                            text-gray-200">
                             {sorted.length} posts
                         </p>
                     </div>
@@ -77,7 +77,7 @@ const BlogList = () => {
                     <button
                         onClick={() => setDrawerOpen(false)}
                         className="md:hidden p-1.5 rounded-lg transition-colors
-                            text-gray-400 hover:text-gray-600 hover:bg-gray-100
+                            text-gray-100 hover:text-gray-200 hover:bg-gray-100
                             dark:text-zinc-500 dark:hover:text-zinc-300 dark:hover:bg-white/[0.05]"
                     >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,7 +140,7 @@ const BlogList = () => {
                         ? <ArticleView key={selectedBlog.id} blog={selectedBlog} />
                         : (
                             <div className="flex flex-col items-center justify-center h-full gap-3
-                                text-gray-400 dark:text-zinc-600">
+                                text-gray-400">
                                 <svg className="w-10 h-10 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z" />
                                 </svg>

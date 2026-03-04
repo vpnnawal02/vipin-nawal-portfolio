@@ -43,7 +43,7 @@ const ArticleView = ({ blog }) => {
 
             {/* Content */}
             <p className="leading-[1.95] text-[0.95rem]
-                text-gray-600 dark:text-zinc-400">
+                text-gray-200 ">
                 {blog.content}
             </p>
 
