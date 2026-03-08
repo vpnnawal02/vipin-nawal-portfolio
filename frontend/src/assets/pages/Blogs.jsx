@@ -6,7 +6,6 @@ const BlogList = () => {
     const sorted = [...blogData].reverse();
     const [selectedId, setSelectedId] = useState(sorted[0]?.id ?? null);
     const [drawerOpen, setDrawerOpen] = useState(false);
-
     const selectedBlog = sorted.find(b => b.id === selectedId);
 
     // Close drawer when resizing to desktop
