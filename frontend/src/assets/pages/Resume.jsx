@@ -1,9 +1,10 @@
 import React from 'react'
+import Title from '../utils/Title';
 
 const Resume = () => {
     return (
         <section className="max-w-6xl mx-auto px-6 py-12" id="resume">
-            <center><h1 className='text-5xl font-extrabold my-10'>MY <span className='text-purple-500'>RESUME</span></h1></center>
+            <Title text_1='MY' text_2='RESUME' />
 
             <div className="grid md:grid-cols-2 gap-12">
 

@@ -16,6 +16,7 @@ import {
     SiMysql,
     SiPostman,
 } from "react-icons/si";
+import Title from "../utils/Title";
 
 const skills = [
     { name: "HTML", icon: <FaHtml5 color="#E34F26" /> },
@@ -38,7 +39,7 @@ const SkillsMarquee = () => {
         <section id="skills" className="py-5 bg-gray-900 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-24">
 
-                <h1 className='text-4xl sm:text-5xl font-extrabold my-5 text-center'>SKILLS & <span className='text-purple-500'>TECH</span></h1>
+                <Title text_1='SKILLS &' text_2='TECH' />
                 <p className="text-gray-300 max-w-xl mb-8 text-center">
                     Technologies I use to build scalable, production-ready web applications.
                 </p>

@@ -6,6 +6,7 @@ import Footer from './assets/components/Footer.jsx';
 import ScrollToTopButton from './assets/utils/ScrollToTopButton.jsx';
 import Blogs from './assets/pages/Blogs.jsx';
 import Resume from './assets/pages/Resume.jsx';
+import Reviews from './assets/components/Reviews.jsx';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/all-projects' element={<AllProjects />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/resume' element={<Resume />} />
+        <Route path='/reviews' element={<Reviews />} />
       </Routes>
       <Footer />
       <ScrollToTopButton />

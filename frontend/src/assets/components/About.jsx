@@ -1,5 +1,6 @@
 import React from "react";
 import about_image from "../imgs/about.png";
+import Title from "../utils/Title";
 
 const About = () => {
     return (
@@ -11,9 +12,7 @@ const About = () => {
 
                 {/* Section Heading */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-                        About <span className="text-purple-500">Me</span>
-                    </h2>
+                    <Title text_1='MY' text_2='RESUME' />
                     <p className="text-gray-400 mt-4 text-lg">
                         Full-Stack Developer | Python Backend Specialist
                     </p>

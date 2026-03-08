@@ -21,7 +21,7 @@ const Hero = () => {
                 <a
                     href="https://wa.me/918851948143?text=Hi%20Vipin%2C%20I%20am%20interested%20in%20your%20web%20development%20services.
 "
-                    className="flex items-center justify-center border-purple-500 border-2 py-2 rounded-sm my-10 bg-purple-500 transition duration-200 shadow-purple-400 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] w-full font-medium"
+                    className="flex items-center justify-center border-purple-500 border-2 py-2 rounded-xs my-10 hover:bg-purple-500 transition duration-200 hover:shadow-purple-400 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] w-full font-medium"
                 >
                     HIRE ME
                 </a>

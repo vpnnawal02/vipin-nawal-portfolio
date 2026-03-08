@@ -9,6 +9,7 @@ import notary from "../imgs/project_images/notary.png"
 import salon from "../imgs/project_images/salon.png"
 import vai from "../imgs/project_images/vai.png"
 import e_commerce from "../imgs/project_images/e_commerce.png";
+import Title from "../utils/Title";
 
 const projectsData = [
     {
@@ -167,11 +168,7 @@ const AllProjects = () => {
 
     return (
         <div className="pt-20">
-            <center>
-                <h1 className="text-5xl font-extrabold my-10">
-                    ALL <span className="text-purple-500">PROJECTS</span>
-                </h1>
-            </center>
+            <Title text_1='All' text_2='PROJECTS' />
 
             {/* Filters */}
             <div className="flex justify-center gap-2 mb-14 md:gap-4 ">

@@ -5,11 +5,12 @@ import hustle_learning from '../imgs/project_images/hustle_learning.png'
 import cafe_website from '../imgs/project_images/cafe_website.png'
 import gymshala from '../imgs/project_images/gymshala.png'
 import e_commerce from '../imgs/project_images/e_commerce.png'
+import Title from '../utils/Title.jsx';
 
 const Projects = () => {
     return (
         <>
-            <h1 className='text-5xl font-extrabold my-5 text-center' id="projects">MY <span className='text-purple-500'>PROJECTS</span></h1>
+            <Title text_1='MY' text_2="PROJECTS" />
 
             <div className="flex justify-center ">
                 <div className="flex flex-col items-center overflow-scroll sm:overflow-auto py-5 px-5">
