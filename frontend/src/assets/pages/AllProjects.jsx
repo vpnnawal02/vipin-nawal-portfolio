@@ -176,9 +176,9 @@ const AllProjects = () => {
                     <button
                         key={category}
                         onClick={() => setActiveCategory(category)}
-                        className={`px-4 py-2 rounded-full text-sm transition ${activeCategory === category
+                        className={`px-4 py-2 rounded-sm border border-purple-500/50 text-sm transition hover:border-purple-500  ${activeCategory === category
                             ? "bg-purple-500 text-white"
-                            : "border border-gray-300 hover:bg-gray-100"
+                            : "border border-gray-300 "
                             }`}
                     >
                         {category}

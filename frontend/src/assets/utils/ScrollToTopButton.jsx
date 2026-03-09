@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
         <button
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="fixed bottom-6 right-6 z-5 p-5 rounded-full bg-purple-500 text-white  shadow-lg hover:bg-gray-700 transition duration-300"
+            className="fixed bottom-10 right-0 z-5 px-3 py-10 rounded-l-xl bg-purple-500 text-white  shadow-lg hover:bg-gray-700 transition duration-300"
         >
             <FaArrowUp />
         </button>

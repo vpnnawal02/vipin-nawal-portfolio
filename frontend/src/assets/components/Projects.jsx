@@ -13,7 +13,7 @@ const Projects = () => {
             <Title text_1='MY' text_2="PROJECTS" />
 
             <div className="flex justify-center ">
-                <div className="flex flex-col items-center overflow-scroll sm:overflow-auto py-5 px-5">
+                <div className="flex flex-col items-center overflow-scroll sm:overflow-auto py-15 px-5">
                     <div className='flex gap-10 w-full '>
 
                         {/* project-1 */}

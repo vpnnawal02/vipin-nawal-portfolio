@@ -6,7 +6,7 @@ import Footer from './assets/components/Footer.jsx';
 import ScrollToTopButton from './assets/utils/ScrollToTopButton.jsx';
 import Blogs from './assets/pages/Blogs.jsx';
 import Resume from './assets/pages/Resume.jsx';
-import Reviews from './assets/components/Reviews.jsx';
+import Reviews from './assets/pages/Reviews.jsx';
 
 function App() {
 

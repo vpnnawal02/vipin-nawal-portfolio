@@ -37,9 +37,8 @@ const Projectcard = ({ name, image, description, ts1, ts2, ts3, ts4, ts5, ts6, g
                         <li className='text-xs border border-gray-500/80 rounded-full px-2 py-1'>{ts6}</li>
                     </ul>
                 </div>
-
                 {/* link icons */}
-                <div className="flex justify-center gap-15">
+                <div className="flex justify-center gap-15 bottom-0">
                     <div className="flex-col items-center justify-center">
                         <a href={github_link}>
                             <div className="flex justify-center">
