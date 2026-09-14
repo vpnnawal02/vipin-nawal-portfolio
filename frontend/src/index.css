@@ -1,11 +1,104 @@
 @import "tailwindcss";
 
-.aurora-container {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  margin: 0%;
-  padding: 0%;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #111111;
+  --text: #ffffff;
+  --nav-bg: rgba(0, 0, 0, 0.4);
+  --surface: #000000;
+  --footer-bg: #030712;
+  --hero-grid-line: rgba(255, 255, 255, 0.06);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"],
+body[data-theme="light"] {
+  --bg: #f8fafc;
+  --text: #111827;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --surface: #ffffff;
+  --footer-bg: #f1f5f9;
+  --hero-grid-line: rgba(17, 24, 39, 0.07);
+  color-scheme: light;
+}
+
+/* Tech-minimal hero background */
+.hero-grid {
+  background-image:
+    linear-gradient(to right, var(--hero-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--hero-grid-line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 75%);
+}
+
+@keyframes hero-drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.1); }
+}
+
+@keyframes hero-drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, -30px) scale(1.05); }
+}
+
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(-18px); opacity: 1; }
+}
+
+@keyframes hero-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes hero-spin-rev {
+  from { transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+@keyframes hero-scan {
+  0% { top: -5%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 105%; opacity: 0; }
+}
+
+.hero-orb-a {
+  animation: hero-drift-a 14s ease-in-out infinite;
+}
+
+.hero-orb-b {
+  animation: hero-drift-b 18s ease-in-out infinite;
+}
+
+.hero-glyph {
+  animation: hero-float 9s ease-in-out infinite;
+}
+
+.hero-ring {
+  animation: hero-spin 60s linear infinite;
+}
+
+.hero-ring-rev {
+  animation: hero-spin-rev 45s linear infinite;
+}
+
+.hero-scan {
+  animation: hero-scan 9s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-orb-a,
+  .hero-orb-b,
+  .hero-glyph,
+  .hero-ring,
+  .hero-ring-rev,
+  .hero-scan,
+  .bounce-soft {
+    animation: none;
+  }
 }
 
 a.active {
@@ -24,8 +117,45 @@ a.active {
 }
 
 body {
-  background-color: #111111;
-  color: white;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Theme-aware surfaces for components with hardcoded dark classes */
+#nav {
+  background-color: var(--nav-bg);
+  color: var(--text);
+}
+
+body[data-theme="light"] .mobile-menu {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+body[data-theme="light"] #footer {
+  background-color: var(--footer-bg);
+}
+
+body[data-theme="light"] #footer h2,
+body[data-theme="light"] #footer p,
+body[data-theme="light"] #footer a {
+  color: #111827;
+}
+
+body[data-theme="light"] #projectcard {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .gradient {
@@ -90,11 +220,4 @@ body {
   to {
     transform: translateX(-25%);
   }
-}
-
-/* Base */
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -36,11 +36,11 @@ const skills = [
 
 const SkillsMarquee = () => {
     return (
-        <section id="skills" className="py-5 bg-gray-900 overflow-hidden">
+        <section id="skills" className="py-5 bg-gray-100 dark:bg-gray-900 overflow-hidden transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-24">
 
                 <Title text_1='SKILLS &' text_2='TECH' />
-                <p className="text-gray-300 max-w-xl mb-8 text-center">
+                <p className="text-gray-600 dark:text-gray-300 max-w-xl mb-8 text-center">
                     Technologies I use to build scalable, production-ready web applications.
                 </p>
 

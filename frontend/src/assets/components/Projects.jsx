@@ -9,7 +9,7 @@ import Title from '../utils/Title.jsx';
 
 const Projects = () => {
     return (
-        <>
+        <section id="projects" className="scroll-mt-24">
             <Title text_1='MY' text_2="PROJECTS" />
 
             <div className="flex justify-center ">
@@ -85,7 +85,7 @@ const Projects = () => {
                     <p>SEE ALL PROJECTS</p><FaArrowRightLong />
                 </a>
             </div>
-        </>
+        </section>
     )
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-gray-950 border-t border-purple-500 mt-10"
+        <footer className="w-full bg-gray-100 dark:bg-gray-950 border-t border-purple-500 mt-10 transition-colors duration-300"
             id="footer">
             <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-24 py-10">
 
@@ -11,17 +11,17 @@ const Footer = () => {
 
                     {/* Brand */}
                     <div>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                             Vipin Nawal
                         </h2>
-                        <p className="text-sm text-gray-300 mt-2 max-w-sm">
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2 max-w-sm">
                             Full-Stack Web Developer focused on building clean, scalable, and
                             user-friendly web applications.
                         </p>
                     </div>
 
                     {/* Navigation */}
-                    <div className="flex gap-6 text-sm font-medium text-gray-300 ">
+                    <div className="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-300 ">
                         <a href="#about" className="hover:decoration hover:underline hover:underline-offset-2 transition ">
                             About
                         </a>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="my-8 border-t border-gray-200"></div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
                     <p>
                         © {new Date().getFullYear()} Vipin Nawal. All rights reserved.
                     </p>

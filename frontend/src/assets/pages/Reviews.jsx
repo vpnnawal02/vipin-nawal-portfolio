@@ -43,7 +43,7 @@ const Reviews = () => {
             {/* Heading */}
             <div className="text-center">
                 <Title text_1="CLIENT" text_2="REVIEWS" />
-                <p className="mt-3 text-lg lg:text-xl text-gray-300">
+                <p className="mt-3 text-lg lg:text-xl text-gray-600 dark:text-gray-300">
                     What people say about working with me
                 </p>
             </div>
@@ -61,7 +61,7 @@ const Reviews = () => {
                     return (
                         <div
                             key={i}
-                            className="flex flex-col gap-4 bg-[#111111] border border-purple-500/40 hover:border-purple-500 rounded-sm p-6 transition-all duration-300 hover:scale-115"
+                            className="flex flex-col gap-4 bg-white dark:bg-[#111111] border border-purple-500/40 hover:border-purple-500 rounded-sm p-6 transition-all duration-300 hover:scale-115"
                         >
                             {/* Quote Icon */}
                             <FaQuoteLeft className="text-purple-500/40 text-2xl" />
@@ -78,7 +78,7 @@ const Reviews = () => {
                             </div>
 
                             {/* Review Text */}
-                            <p className="text-gray-300 text-sm leading-relaxed flex-1">
+                            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1">
                                 "{review.text}"
                             </p>
 
@@ -87,12 +87,12 @@ const Reviews = () => {
 
                             {/* Author */}
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-sm font-bold shrink-0">
+                                <div className="w-10 h-10 rounded-full bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-700 dark:text-purple-300 text-sm font-bold shrink-0">
                                     {initials}
                                 </div>
                                 <div>
-                                    <p className="text-white font-semibold text-sm">{review.name}</p>
-                                    <p className="text-gray-500 text-xs">{review.role}</p>
+                                    <p className="text-gray-900 dark:text-white font-semibold text-sm">{review.name}</p>
+                                    <p className="text-gray-500 dark:text-gray-400 text-xs">{review.role}</p>
                                 </div>
                             </div>
                         </div>

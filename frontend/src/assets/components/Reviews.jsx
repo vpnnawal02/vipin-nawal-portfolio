@@ -47,7 +47,7 @@ const Reviews = () => {
             {/* Heading */}
             <div className="text-center">
                 <Title text_1='CLIENT' text_2='REVIEWS' />
-                <p className="mt-3 text-lg lg:text-xl text-gray-300">
+                <p className="mt-3 text-lg lg:text-xl text-gray-600 dark:text-gray-300">
                     What people say about us
                 </p>
             </div>
@@ -72,7 +72,7 @@ const Reviews = () => {
                                 </div>
 
                                 {/* Text */}
-                                <p className="text-gray-300 text-lg leading-relaxed">
+                                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                                     “{review.text}”
                                 </p>
 
@@ -89,7 +89,7 @@ const Reviews = () => {
                 <button
                     onClick={prevReview}
                     disabled={index === 0}
-                    className={`absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full ${index === 0 ? "opacity-40 cursor-not-allowed" : "hover:bg-black"}
+                    className={`absolute left-0 top-1/2 -translate-y-1/2 bg-gray-900/70 dark:bg-black/60 p-3 rounded-full ${index === 0 ? "opacity-40 cursor-not-allowed" : "hover:bg-gray-900 dark:hover:bg-black"}
           `}
                 >
                     <FaChevronLeft className="text-white" />
@@ -98,7 +98,7 @@ const Reviews = () => {
                 <button
                     onClick={nextReview}
                     disabled={index === reviews.length - 1}
-                    className={`absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full ${index === reviews.length - 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-black"}`}
+                    className={`absolute right-0 top-1/2 -translate-y-1/2 bg-gray-900/70 dark:bg-black/60 p-3 rounded-full ${index === reviews.length - 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-gray-900 dark:hover:bg-black"}`}
                 >
                     <FaChevronRight className="text-white" />
                 </button>

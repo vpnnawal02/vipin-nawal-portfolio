@@ -3,6 +3,7 @@ import { FiAlignRight } from "react-icons/fi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { RxCross2 } from "react-icons/rx";
+import ThemeToggle from "./ThemeToggle";
 
 const NavigationBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,28 +45,30 @@ const NavigationBar = () => {
 
 
 
-                    {/* Social Icons */}
-                    <div className="hidden lg:flex gap-3 ">
-                        <a href="https://www.facebook.com/profile.php?id=100008160219044" target="_blank">
-                            <FaFacebook className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
-                        </a>
-                        <a href="https://github.com/vpnnawal02" target="_blank">
-                            <FaGithub className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vipin-nawal02/" target="_blank">
-                            <FaLinkedin className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
-                        </a>
-                    </div>
+                    {/* Right controls: socials + theme toggle */}
+                    <div className="flex items-center gap-3">
+                        <div className="hidden lg:flex gap-3 ">
+                            <a href="https://www.facebook.com/profile.php?id=100008160219044" target="_blank">
+                                <FaFacebook className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
+                            </a>
+                            <a href="https://github.com/vpnnawal02" target="_blank">
+                                <FaGithub className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vipin-nawal02/" target="_blank">
+                                <FaLinkedin className="w-6 h-auto hover:text-purple-500 cursor-pointer duration-200" />
+                            </a>
+                        </div>
 
-                    {/* Theme Toggle */}
-                    {/* <ThemeToggle /> */}
+                        {/* Theme Toggle */}
+                        <ThemeToggle />
 
-                    {/* Mobile Icon */}
-                    <div
-                        className="md:hidden w-10 h-10 cursor-pointer"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        <FiAlignRight className="w-10 h-10" />
+                        {/* Mobile Icon */}
+                        <div
+                            className="md:hidden w-10 h-10 cursor-pointer"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        >
+                            <FiAlignRight className="w-10 h-10" />
+                        </div>
                     </div>
                 </div>
             </nav >
@@ -90,6 +93,7 @@ const NavigationBar = () => {
     `}
                 >
                     <div className="h-full flex flex-col items-center py-20">
+                        <ThemeToggle />
                         <div className="flex flex-col gap-6 text-lg font-medium py-10">
                             <NavLink to='/' className='hover:text-purple-500 rounded-sm'
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}>HOME</NavLink>

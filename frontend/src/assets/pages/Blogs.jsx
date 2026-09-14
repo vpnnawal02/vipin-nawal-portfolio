@@ -67,7 +67,7 @@ const BlogList = () => {
                             All Articles
                         </h2>
                         <p className="text-[11px] mt-0.5
-                            text-gray-200">
+                            text-gray-500 dark:text-zinc-500">
                             {sorted.length} posts
                         </p>
                     </div>
@@ -76,7 +76,7 @@ const BlogList = () => {
                     <button
                         onClick={() => setDrawerOpen(false)}
                         className="md:hidden p-1.5 rounded-lg transition-colors
-                            text-gray-100 hover:text-gray-200 hover:bg-gray-100
+                            text-gray-500 hover:text-gray-700 hover:bg-gray-100
                             dark:text-zinc-500 dark:hover:text-zinc-300 dark:hover:bg-white/[0.05]"
                     >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
